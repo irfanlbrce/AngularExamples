@@ -1,0 +1,9 @@
+
+<div class="container" style="margin-top:40px">
+<textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel" ></textarea>
+    <button ng-click="getContent()">Get content</button>
+    <button ng-click="setContent()">Set content</button>
+<div class="well">
+    <span ng-bind-html="tinymceModel"></span>
+</div>
+</div>

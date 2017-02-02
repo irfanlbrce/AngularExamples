@@ -1,0 +1,282 @@
+{
+  "response": {
+    "details": {
+      "order": {
+        "orderState": "INCOMPLETE",
+        "7DayDeliveryItemCount": 1,
+        "bopusItemCount": 4,
+        "shipAndSaveItemCount": 0,
+        "hdDeliveryItemCount": 2,
+        "externalId": "null",
+        "commerceItems": [
+          {
+            "itemOrderData": {
+              "isEmployeeDiscApplied": "N",
+              "isArApplied": "",
+              "itemTotal": "3.39",
+              "selectedShipSaveOption": "",
+              "commerceItemId": "ci6591384802",
+              "qty": 1,
+              "isQtyAdjusted": "N",
+              "ShippingMethod": "Expected Delivery in 3-7 business days",
+              "selectedFulfillmentOption": "HD"
+            },
+            "itemCatalogData": {
+              "bopus_stock": "Unknown",
+              "weight": "0.34 LBS",
+              "echSavingsFlag": "N",
+              "measure": "CT",
+              "maxQty": "",
+              "fsaEligibleFlag": "N",
+              "freeShippingFlag": "Y",
+              "webOnlyFlag": "Y",
+              "bopus_eligible_product_flag": "false",
+              "alternateSkuAvailFlag": "N",
+              "availableFulfillmentOptions": [
+                "HD"
+              ],
+              "itemPrice": {
+                "listPrice": "3.39",
+                "Sale Price": "3.39"
+              },
+              "itemSurchargeFlag": "N",
+              "size": 40,
+              "upcNumber": "2070040211",
+              "skuId": 468676,
+              "brand": "Salada 100% Traditional Green Tea",
+              "balance_on_hand_stock_level": "1001",
+              "displayName": "Salada 100% Traditional Green Tea",
+              "shipHazardFlag": "N"
+            }
+          },
+          {
+            "itemOrderData": {
+              "isEmployeeDiscApplied": "N",
+              "isArApplied": "",
+              "itemTotal": "19.99",
+              "selectedShipSaveOption": "",
+              "commerceItemId": "ci6591384803",
+              "qty": 1,
+              "isQtyAdjusted": "N",
+              "ShippingMethod": "Expected Delivery in 2 business days",
+              "selectedFulfillmentOption": "HD"
+            },
+            "itemCatalogData": {
+              "bopus_stock": "Unknown",
+              "weight": "1.9 LBS",
+              "echSavingsFlag": "N",
+              "measure": "OZ",
+              "maxQty": 12,
+              "fsaEligibleFlag": "Y",
+              "freeShippingFlag": "Y",
+              "webOnlyFlag": "N",
+              "bopus_eligible_product_flag": "false",
+              "alternateSkuAvailFlag": "N",
+              "availableFulfillmentOptions": [
+                "HD"
+              ],
+              "itemPrice": {
+                "listPrice": "19.99",
+                "Sale Price": "19.99"
+              },
+              "itemSurchargeFlag": "N",
+              "size": 24,
+              "upcNumber": "4711330902",
+              "skuId": 298691,
+              "brand": "Clear Care Cleaning And Disinfecting Solution",
+              "balance_on_hand_stock_level": "1070",
+              "displayName": "Clear Care Cleaning And Disinfecting Solution",
+              "shipHazardFlag": "N"
+            }
+          },
+          {
+            "itemOrderData": {
+              "isEmployeeDiscApplied": "N",
+              "isArApplied": "N",
+              "itemTotal": "13.56",
+              "selectedShipSaveOption": "",
+              "commerceItemId": "ci6591384804",
+              "qty": 4,
+              "isQtyAdjusted": "N",
+              "ShippingMethod": "Pick Up at myCVS Store Today",
+              "selectedFulfillmentOption": "SP"
+            },
+            "itemCatalogData": {
+              "bopus_stock": "Instock",
+              "availableShipSaveOptions": [
+                {
+                  "code": "3,3",
+                  "displayValue": "3 Months"
+                },
+                {
+                  "code": "2,3",
+                  "displayValue": "2 Months"
+                },
+                {
+                  "code": "1,3",
+                  "displayValue": "1 Month"
+                },
+                {
+                  "code": "6,3",
+                  "displayValue": "6 Months"
+                },
+                {
+                  "code": "5,3",
+                  "displayValue": "5 Months"
+                },
+                {
+                  "code": "4,3",
+                  "displayValue": "4 Months"
+                }
+              ],
+              "weight": "0.42 LBS",
+              "echSavingsFlag": "N",
+              "measure": "OZ",
+              "maxQty": 12,
+              "fsaEligibleFlag": "N",
+              "freeShippingFlag": "Y",
+              "webOnlyFlag": "N",
+              "bopus_eligible_product_flag": "true",
+              "alternateSkuAvailFlag": "Y",
+              "availableFulfillmentOptions": [
+                "HD",
+                "SP",
+                "SS"
+              ],
+              "itemSurchargeFlag": "N",
+              "itemPrice": {
+                "listPrice": "3.39",
+                "Sale Price": "3.39",
+                "offer": "25% OFF"
+              },
+              "size": 6.5,
+              "upcNumber": "5042801564",
+              "skuId": 148862,
+              "brand": "CVS Baby Oil Gel With Aloe Vera And Vitamin E",
+              "balance_on_hand_stock_level": "4",
+              "displayName": "CVS Baby Oil Gel With Aloe Vera And Vitamin E",
+              "shipHazardFlag": "N"
+            }
+          },
+          {
+            "itemOrderData": {
+              "isEmployeeDiscApplied": "N",
+              "isArApplied": "N",
+              "itemTotal": "13.56",
+              "selectedShipSaveOption": "",
+              "commerceItemId": "ci6591384804",
+              "qty": 4,
+              "isQtyAdjusted": "N",
+              "ShippingMethod": "Expected Delivery in 3-7 business days",
+              "selectedFulfillmentOption": "SP"
+            },
+            "itemCatalogData": {
+              "bopus_stock": "Instock",
+              "availableShipSaveOptions": [
+                {
+                  "code": "3,3",
+                  "displayValue": "3 Months"
+                },
+                {
+                  "code": "2,3",
+                  "displayValue": "2 Months"
+                },
+                {
+                  "code": "1,3",
+                  "displayValue": "1 Month"
+                },
+                {
+                  "code": "6,3",
+                  "displayValue": "6 Months"
+                },
+                {
+                  "code": "5,3",
+                  "displayValue": "5 Months"
+                },
+                {
+                  "code": "4,3",
+                  "displayValue": "4 Months"
+                }
+              ],
+              "weight": "0.42 LBS",
+              "echSavingsFlag": "N",
+              "measure": "OZ",
+              "maxQty": 12,
+              "fsaEligibleFlag": "N",
+              "freeShippingFlag": "Y",
+              "webOnlyFlag": "N",
+              "bopus_eligible_product_flag": "true",
+              "alternateSkuAvailFlag": "Y",
+              "availableFulfillmentOptions": [
+                "HD",
+                "SP",
+                "SS"
+              ],
+              "itemSurchargeFlag": "N",
+              "itemPrice": {
+                "listPrice": "3.39",
+                "Sale Price": "3.39",
+                "offer": "25% OFF"
+              },
+              "size": 65,
+              "upcNumber": "5042801564",
+              "skuId": 675862,
+              "brand": "mohammad",
+              "balance_on_hand_stock_level": "4",
+              "displayName": "irfan",
+              "shipHazardFlag": "N"
+            }
+          }
+        ],
+        "orderSummary": {
+          "total": "42.43",
+          "shipping": "5.49",
+          "tax": "0.00",
+          "employeeDiscounts": "0.00",
+          "subtotal": "36.94",
+          "extraCareRewards": "0.00",
+          "fsaEligibleAmount": "19.99"
+        },
+        "isSPURxTied": false,
+        "bopus_eligible_store_flag": "true",
+        "my_cvs_store_id": "316",
+        "orderShippingInfo": {
+          "pickupInfo": {
+            "selectedStoreInfo": {
+              "storeState": "MA",
+              "storeZip": "02019",
+              "storeAddress1": "50 PULASKI BOULEVARD",
+              "storeCity": "BELLINGHAM",
+              "storeId": "316"
+            },
+            "receiveSmsFlag": "N",
+            "emailAddress": "sandy@tcs.com",
+            "pickupOptions": {}
+          },
+          "shippingMethod": {
+            "availableShippingMethods": [
+              {
+                "code": "500",
+                "displayValue": "3-7 business days * Items in order ineligible for 2-day shipping"
+              }
+            ]
+          },
+          "shippingAddress": {
+            "emailAddress": "sandy@tcs.com"
+          }
+        },
+        "isOrderPlacedByGuestUser": "N",
+        "2DayDeliveryItemCount": 1,
+        "totalSavings": "0.00",
+        "totalItemCount": 6,
+        "molinaUser": false,
+        "orderId": "o237205743",
+        "subscriptionName": null
+      }
+    },
+    "header": {
+      "statusCode": "0000",
+      "statusDesc": "SUCCESS"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+        <label>To Camel Case</label>
+        <input type="text" ng-model="convertstring.toCamelCase" class="form-control"/>
+    </div>
+     <div class="col-md-12">
+        <div class="well">
+            <span>{{convertstring.CamelCase(convertstring.toCamelCase)}}</span>
+            <span ng-click="convertstring.toCamelCase = ''" class="pull-right">Click here to Clear the input field</span>
+        </div>
+
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-md-12">
+         <label>To Lower Case</label>
+        <input type="text" ng-model="convertstring.toLowerCase" class="form-control"/>
+    </div>
+     <div class="col-md-12">
+        <div class="well">
+            <span>{{convertstring.LowerCase(convertstring.toLowerCase)}}</span>
+             <span ng-click="convertstring.toLowerCase = ''" class="pull-right">Click here to Clear the input field</span>
+        </div>
+    </div>
+  </div>
+</div>

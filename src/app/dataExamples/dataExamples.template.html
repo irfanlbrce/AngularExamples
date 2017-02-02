@@ -1,0 +1,41 @@
+<div class="dataExamples">
+  <div id="wrapper" ng-class="{'toggled':dataExamples.toggleMe}">
+
+       <!-- Sidebar -->
+       <div id="sidebar-wrapper" ng-show="!dataExamples.toggleMe">
+           <ul class="sidebar-nav">
+               <li class="sidebar-brand">
+                   <a href="">
+                       Data Examples
+                   </a>
+
+               </li>
+               <li  class="" ui-sref-active="active">
+                   <a class=""  ui-sref=".example1">Examples1</a>
+               </li>
+               <li ui-sref-active="active" class="">
+                   <a class=""  ui-sref=".example2">Examples2</a>
+               </li>
+               <li class="" ui-sref-active="active">
+                   <a class=""  ui-sref=".example3">Examples3</a>
+               </li>
+                <li class="" ui-sref-active="active">
+                   <a class=""  ui-sref=".convertstring">convert to string</a>
+               </li>
+
+           </ul>
+       </div>
+       <!-- /#sidebar-wrapper -->
+
+       <!-- Page Content -->
+       <div id="page-content-wrapper">
+         <span class="glyphicon burger-menu"
+           style="font-size:22px;" ng-click="dataExamples.toggleMe = !dataExamples.toggleMe"
+           ng-class="{'glyphicon-remove':!dataExamples.toggleMe,'glyphicon-menu-hamburger':dataExamples.toggleMe}">
+         </span>
+           <div ui-view></div>
+       </div>
+       <!-- /#page-content-wrapper -->
+
+   </div>
+</div>

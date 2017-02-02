@@ -1,0 +1,77 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>{{dataExamples.twodays[0].itemOrderData.ShippingMethod}}({{dataExamples.twodays.length}})</h3>
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th>upc number</th>
+              <th>size</th>
+              <th>skuId</th>
+              <th>brand</th>
+              <th>name</th>
+            </tr>
+          </thead>
+            <tbody>
+            <tr ng-repeat="item in dataExamples.twodays">
+              <th><span ng-bind="item.itemCatalogData.upcNumber"></span></th>
+              <th><span ng-bind="item.itemCatalogData.size"></span></th>
+              <th><span ng-bind="item.itemCatalogData.skuId"></span></th>
+              <th><span ng-bind="item.itemCatalogData.brand"></span></th>
+              <th><span ng-bind="item.itemCatalogData.displayName"></span></th>
+            </tr>
+          </tbody>
+          </table>
+      </div>
+      <div class="col-md-12">
+        <h3>{{dataExamples.threedays[0].itemOrderData.ShippingMethod}}({{dataExamples.threedays.length}})</h3>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+              <th>upc number</th>
+              <th>size</th>
+              <th>skuId</th>
+              <th>brand</th>
+              <th>name</th>
+            </tr>
+          </thead>
+            <tbody>
+            <tr ng-repeat="item in dataExamples.threedays">
+              <th><span ng-bind="item.itemCatalogData.upcNumber"></span></th>
+              <th><span ng-bind="item.itemCatalogData.size"></span></th>
+              <th><span ng-bind="item.itemCatalogData.skuId"></span></th>
+              <th><span ng-bind="item.itemCatalogData.brand"></span></th>
+              <th><span ng-bind="item.itemCatalogData.displayName"></span></th>
+            </tr>
+          </tbody>
+          </table>
+      </div>
+      <div class="col-md-12">
+        <h3>{{dataExamples.store[0].itemOrderData.ShippingMethod}}({{dataExamples.store.length}})</h3>
+         <table class="table table-hover">
+            <thead>
+            <tr>
+              <th>upc number</th>
+              <th>size</th>
+              <th>skuId</th>
+              <th>brand</th>
+              <th>name</th>
+            </tr>
+          </thead>
+            <tbody>
+            <tr ng-repeat="item in dataExamples.store">
+              <th><span ng-bind="item.itemCatalogData.upcNumber"></span></th>
+              <th><span ng-bind="item.itemCatalogData.size"></span></th>
+              <th><span ng-bind="item.itemCatalogData.skuId"></span></th>
+              <th><span ng-bind="item.itemCatalogData.brand"></span></th>
+              <th><span ng-bind="item.itemCatalogData.displayName"></span></th>
+            </tr>
+          </tbody>
+          </table>
+      </div>
+    </div>
+</div>
+
+<input type="text" id="test"/>
+
+<button ng-click="dataExamples.tresting()">testing focus</button>
