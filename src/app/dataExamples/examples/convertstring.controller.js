@@ -6,9 +6,9 @@
         .module('myNewProject')
         .controller('convertstringController', convertstringController);
 
-    convertstringController.$inject = ['$scope'];
+    convertstringController.$inject = ['$scope', 'SweetAlert'];
 
-    function convertstringController($scope) {
+    function convertstringController($scope,SweetAlert) {
 
         //all variables and functions declarations
         var vm = this;
@@ -56,5 +56,73 @@
             //Intitial loading functions
 
         }
+
+
+        $scope.demo1 = function() {
+		SweetAlert.swal("Here's a message");
+	}
+
+	$scope.demo2 = function() {
+		SweetAlert.swal("Here's a message!", "It's pretty, isn't it?");
+	}
+
+	$scope.demo3 = function() {
+		SweetAlert.swal("Good job!", "You clicked the button!", "success")
+	}
+
+	$scope.demo4 = function() {
+		SweetAlert.swal({   
+			title: "Are you sure?",   
+			text: "Your will not be able to recover this imaginary file!",   
+			type: "warning",   
+			showCancelButton: true,   
+			confirmButtonColor: "#DD6B55",   
+			confirmButtonText: "Yes, delete it!",
+			closeOnConfirm: false
+		},  function(){  
+			SweetAlert.swal("Booyah!");
+		});
+	}
+
+	$scope.demo5 = function() {
+		SweetAlert.swal({   
+			title: "Are you sure?",   
+			text: "Your will not be able to recover this imaginary file!",   
+			type: "warning",   
+			showCancelButton: true,   
+			confirmButtonColor: "#DD6B55",   
+			confirmButtonText: "Yes, delete it!",   
+			cancelButtonText: "No, cancel plx!",   
+			closeOnConfirm: false,   
+			closeOnCancel: false 
+		}, function(isConfirm){  
+			if (isConfirm) {     
+				SweetAlert.swal("Deleted!", "Your imaginary file has been deleted.", "success");   
+			} else {     
+				SweetAlert.swal("Cancelled", "Your imaginary file is safe :)", "error");   
+			} 
+		});
+	}
+
+
+	$scope.demo6 = function() {
+		SweetAlert.swal({   
+			title: "Sweet!",   
+			text: "Here's a custom image.",   
+			imageUrl: "http://oitozero.com/img/avatar.jpg" 
+		});
+	}
+
+    $scope.demo7 = function () {
+            SweetAlert.swal({
+                 title: "Feature comming soon..!",
+                text: "",
+                type: "warning",
+                confirmButtonText: "Close",
+                confirmButtonColor: "#DD6B55",   
+                timer: 2000
+            });
+        }
+
     }
 })();
