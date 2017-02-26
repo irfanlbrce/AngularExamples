@@ -56,7 +56,29 @@
         templateUrl: 'app/ckeditor/TinyMCE.template.html',
         controller: 'TinyMCEController',
         controllerAs: 'TinyMCE'
-      });
+      })
+      .state('table', {
+        url: '/table',
+        abstract:true,            
+        templateUrl: 'app/table/table.html',
+        controller: 'TableController',
+        controllerAs: 'table'
+             
+        })
+        .state('table.sort-pagination', {
+            url: '/sort-pagination',
+            templateUrl: 'app/table/sort-pagination.template.html',
+            controller: 'TableController',
+            controllerAs: 'table'
+                 
+        })
+        .state('table.repeat', {
+            url: '/repeat',
+            templateUrl: 'app/table/repeat.template.html',
+            controller: 'TableController',
+            controllerAs: 'table'
+                 
+        });
 
     $urlRouterProvider.otherwise('/');
   }

@@ -21,11 +21,16 @@
        return $http.get('app/data/part.json');
       };
 
+      var getTableData = function () {
+       return $http.get('app/json/mock.json');
+      };
+
 
         return {
             getDeals : getDeals,
             getItems : getItems,
-            getList : getList
+            getList : getList,
+            getTableData:getTableData
         };
     };
 })();
