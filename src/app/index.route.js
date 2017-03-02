@@ -78,7 +78,19 @@
             controller: 'TableController',
             controllerAs: 'table'
                  
-        });
+        })
+         .state('table.inputformater', {
+          url: '/inputformater',
+          templateUrl: 'app/table/inputformater.template.html',
+          controller: 'TableController',
+          controllerAs: 'table'
+        })
+        .state('Angular Material', {
+          url: '/AngularMaterial',
+          templateUrl: 'app/AngularMaterial/AngularMaterial.template.html',
+          controller: 'AngularMaterialController',
+          controllerAs: 'AngularMaterial'
+      });
 
     $urlRouterProvider.otherwise('/');
   }

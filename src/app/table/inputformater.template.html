@@ -1,0 +1,57 @@
+<div class="container">
+	<div class="row">
+        <div class="col-md-6">
+    		<h2>Only Number</h2>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" numeric-only ng-model="amount" placeholder="Only Number" />
+                  
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+        <div class="col-md-6">
+    		<h2>Currency Input</h2>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" ng-model="table.currenyNumber" currency-input  placeholder="currency Input" />
+                    
+                </div>
+            </div>
+            <p class="well">{{table.currenyNumber}}</p>
+        </div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+        <div class="col-md-6">
+    		<h2>Currency Formatter</h2>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" ng-input-currency ng-model="value"  placeholder="currency Input" />
+                    
+                </div>
+            </div>
+            <p class="well">{{value}}</p>
+        </div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+        <div class="col-md-6">
+    		<h2>Curreny  </h2>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" ng-model="currency" angular-currency="options" variable-options="true"  placeholder="Curreny" />
+                    
+                </div>
+            </div>
+            <p class="well">{{currency}}</p>
+        </div>
+	</div>
+</div>

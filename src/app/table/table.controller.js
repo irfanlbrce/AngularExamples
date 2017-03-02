@@ -11,9 +11,12 @@
         vm.users = []; //declare an empty array
 
         vm.sort = vm.sort;
-
+        vm.currenyNumber = 1121.1;
         activate();
 
+        $scope.options = {
+            aSign: '$'
+        };
         function activate() {
             mainService.getTableData().success(function(response) {
                 console.log(response)
