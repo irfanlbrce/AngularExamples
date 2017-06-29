@@ -6,7 +6,18 @@
     .config(routerConfig);
 
   /** @ngInject */
-  function routerConfig($stateProvider, $urlRouterProvider) {
+  function routerConfig($httpProvider,$stateProvider, $urlRouterProvider) {
+
+     //initialize get 
+        if (!$httpProvider.defaults.headers.get) {
+            $httpProvider.defaults.headers.get = {};
+        }
+        //disable IE ajax request caching
+        $httpProvider.defaults.headers.get['If-Modified-Since'] = '0';
+        
+        $httpProvider.defaults.headers.get['Cache-Control'] = 'no-cache';
+        $httpProvider.defaults.headers.get['Pragma'] = 'no-cache';
+
     $stateProvider
       .state('home', {
         url: '/',
@@ -85,6 +96,12 @@
           controller: 'TableController',
           controllerAs: 'table'
         })
+        .state('table.UI-GRID', {
+          url: '/uigrid',
+          templateUrl: 'app/table/uigrid.template.html',
+          controller: 'uigridController',
+          controllerAs: 'uigrid'
+        })
         .state('Angular Material', {
           url: '/AngularMaterial',
           templateUrl: 'app/AngularMaterial/AngularMaterial.template.html',
@@ -93,6 +110,20 @@
       });
 
     $urlRouterProvider.otherwise('/');
+    // scrollbar defaults
+			// ScrollBarsProvider.defaults = {
+			// 	autoHideScrollbar: true,
+			// 	setHeight: 100,
+			// 	scrollInertia: 0,
+			// 	axis: 'yx',
+			// 	advanced: {
+			// 		updateOnContentResize: true
+			// 	},
+			// 	scrollButtons: {
+			// 		scrollAmount: 'auto', // scroll amount when button pressed
+			// 		enable: false // enable scrolling buttons by default
+			// 	}
+			// };
   }
 
 })();

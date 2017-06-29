@@ -6,9 +6,9 @@
         .module('myNewProject')
         .controller('convertstringController', convertstringController);
 
-    convertstringController.$inject = ['$scope', 'SweetAlert'];
+    convertstringController.$inject = ['$scope', 'SweetAlert', 'Mailto'];
 
-    function convertstringController($scope,SweetAlert) {
+    function convertstringController($scope,SweetAlert,Mailto) {
 
         //all variables and functions declarations
         var vm = this;
@@ -123,6 +123,14 @@
                 timer: 2000
             });
         }
+var recepient = "stefan@dontgohere.com";
+var options = {
+	cc: "cc.this.person@dontgohere.com",
+	bcc: "bcc.this.person@dontgohere.com",
+	subject: "Angular-mailto Email",
+	body: "Hi Stefan,\nThis is an email pre-populated from angular-mailto."
+};
 
+$scope.href = Mailto.url(recepient, options);
     }
 })();

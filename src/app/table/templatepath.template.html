@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="row">
+        <div class="col-md-12">
+            <!--<div id="grid1" ui-grid="{ data: uigrid.myData }" class="grid"></div>-->
+            <div uib-dropdown class="col-md-3">
+                <button id="btn-writingstep-append-to-single-button" type="button" class="btn btn-default glowing-border col-md-12 col-lg-12 writer-comp" uib-dropdown-toggle>
+                    <span class="dropdown-list" > {{uigrid.bonusTypeListData.label}} </span>
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+                <ul class="dropdown-menu field-data" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+                <li role="menuitem" value="bonusTypeList" ng-repeat="bonusTypeList in uigrid.bonusTypeLists | orderBy: 'displayOrder'">
+                    <a ng-click="uigrid.bonusTypeListData = bonusTypeList; uigrid.addData(uigrid.bonusTypeListData.code)" title="{{bonusTypeList.label}}">{{bonusTypeList.label}}</a>
+                </li>
+                </ul>
+            </div>
+
+            <button type="button" id="addData" class="btn btn-success" ng-click="addData()">Add Data</button>
+            <button type="button" id="addData" class="btn btn-success" ng-click="uigrid.saveData(uigrid.gridOptions)">Save Data</button>
+            <button type="button" id="reset" class="btn btn-success" ng-click="reset()">Reset</button>
+            <br>
+            <br>
+           <div id="grid1" ui-grid="uigrid.gridOptions" class="grid"></div>
+
+            <div id="grid1" ui-grid="gridSaved" ui-grid-edit class="grid"></div>
+        </div>
+	</div>
+</div>

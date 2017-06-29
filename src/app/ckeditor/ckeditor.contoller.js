@@ -9,5 +9,11 @@
   function ckeditorController() {
     var vm = this;
     vm.Text = '';
+
+     vm.customSettings = {
+    control: 'brightness',
+    theme: 'bootstrap',
+    position: 'top left'
+  };
   }
 })();

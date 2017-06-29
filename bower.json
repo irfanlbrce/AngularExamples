@@ -25,9 +25,14 @@
     "angular-filter": "^0.5.14",
     "ngSweetAlert": "angular-sweetalert#^1.1.2",
     "angular-material": "^1.1.3",
-    "ng-input-currency": "^0.9.7"
+    "ng-input-currency": "^0.9.7",
+    "angular-ui-grid": "^4.0.2",
+    "angular-mailto": "^0.1.0",
+    "angular-minicolors": "^0.0.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    
+  },
   "overrides": {
     "bootstrap-sass": {
       "main": [

@@ -18,7 +18,11 @@
         vm.threedays = [];
 
         //Function decalarations
-
+// example of overriding defaults per scrollbar
+			$scope.scrollbarConfig = {
+				theme: 'minimal',
+				scrollInertia: 500
+			}
         function loadData() {
             mainService.getItems().success(function(response) {
               console.log(response)
